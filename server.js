@@ -15,6 +15,7 @@ connectDB();
 app.use(cors());
 app.use(express.json());
 app.use('/api/auth', require('./routes/auth'));
+app.use('/api/private', require('./routes/private'));
 //Last error handler
 app.use(errorHandler);
 
